@@ -41,32 +41,32 @@
 					<dt>
 						<h4>
 							<?php
-									if (!mysql_connect("localhost", "root", "12345"))
-										die("Veritabanina baglanamadi...");
-									if (!mysql_select_db("bar"))
-										die("Veritabani hatali...");
+								if (!mysql_connect("localhost", "root", "12345"))
+									die("Veritabanina baglanamadi...");
+								if (!mysql_select_db("bar"))
+									die("Veritabani hatali...");
 
-									$soru1 = $_POST['s1'];
-									$soru2 = $_POST['s2'];
-									$soru3 = $_POST['s3'];
-									$soru4 = $_POST['s4'];
-									$soru5 = $_POST['s5'];
-									if (!$soru1 || !$soru2 || !$soru3 || !$soru4 || !$soru5){
-										echo 'Lütfen bütün soruları yanıtlayınız...';
-										exit;
+								$soru1 = $_POST['s1'];
+								$soru2 = $_POST['s2'];
+								$soru3 = $_POST['s3'];
+								$soru4 = $_POST['s4'];
+								$soru5 = $_POST['s5'];
+								if (!$soru1 || !$soru2 || !$soru3 || !$soru4 || !$soru5){
+									echo 'Lütfen bütün soruları yanıtlayınız...';
+									exit;
+								}
+								else {
+									mysql_query("insert into kul (s1, s2, s3, s4, s5) VALUES('$soru1','$soru2','$soru3','$soru4', '$soru5')");
+									$answer = array ('c','b','a','b','b');
+									$ques = array("s1" , "s2" , "s3" , "s4" , "s5" );
+									$t = 0;
+									for($i = 0 ; $i < sizeof($answer) ;$i ++){
+										if ($answer[$i] == $_POST[$ques[$i]]){
+											$t = $t + 1;
+										}	
 									}
-									else {
-										mysql_query("insert into kul (s1, s2, s3, s4, s5) VALUES('$soru1','$soru2','$soru3','$soru4', '$soru5')");
-										$answer = array ('c','b','a','b','b');
-										$ques = array("s1" , "s2" , "s3" , "s4" , "s5" );
-										$t = 0;
-										for($i = 0 ; $i < sizeof($answer) ;$i ++){
-											if ($answer[$i] == $_POST[$ques[$i]]){
-												$t = $t + 1;
-											}	
-										}
-										echo $t."dogrunuz var...";
-									}
+									echo $t."dogrunuz var...";
+								}
 							?>
 					  </h4>
 					</dt>
