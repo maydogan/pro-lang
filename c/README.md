@@ -1,1 +1,1 @@
-c kodları
+**c** ile yazdığım kodlar burada.
