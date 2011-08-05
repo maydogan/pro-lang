@@ -66,8 +66,6 @@
 											}	
 										}
 										echo $t."dogrunuz var...";
-
-
 									}
 							?>
 					  </h4>
