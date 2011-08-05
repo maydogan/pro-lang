@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns = "http://www.w3.org/1999/xhtml">
 	<title>Genel kültür</title>
   <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -12,16 +12,16 @@
 		<body >
 		<table id = "footer" >
 		<tr>
-			<td colspan="2" style="background-color:#FFA500;">
+			<td colspan="2" style = "background-color:#FFA500;">
 				<h3>Bilginizi sınamaya ne dersiniz? </h3>
 			</td>
 		</tr>
-		<tr valign="top">
-			<td style="background-color:#FFD700;width:100px;text-align:top;">
+		<tr valign = "top">
+			<td style = "background-color:#FFD700;width:100px;text-align:top;">
 				<h3> Genel kültür Testi</h3> <br/>
 			</td>
 			<td
-	style="background-color:#eeeeee;width:500px;text-align:top;">
+	style = "background-color:#eeeeee;width:500px;text-align:top;">
 	</script>
 	</script>
     </head>
