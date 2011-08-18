@@ -5,8 +5,6 @@ def fib(n)
   n.times do |i|
     fir, sec = sec, sec + fir
   end
-
-  return fir
-
+return fir
 end
 
