@@ -9,5 +9,6 @@
 - **[python kodlarım](https://github.com/maydogan/pro-lang/tree/master/python/)**
 
 - **[ruby kodlarım](https://github.com/maydogan/pro-lang/tree/master/ruby/)**
-
+ 
+- **[shell kodlarım](https://github.com/maydogan/pro-lang/tree/master/shell)**
 
